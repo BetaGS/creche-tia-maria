@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Os elementos da floresta (árvores, folhas, raios de sol)
+   serão adicionados diretamente no index.html ou podem
+   ser movidos para o App.jsx como elementos JSX */
