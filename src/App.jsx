@@ -64,22 +64,16 @@ Outra palavra que a turma também está explorando é SUCURI, devido ao sucesso 
       'https://via.placeholder.com/600x400?text=Foto+Tintas+Naturais',
       'https://via.placeholder.com/600x400?text=Foto+Pescaria+e+Mandioca'
     ],
-    trabalho: `Na turma do pré 1 (EI-41), a caminhada começou a partir da escuta atenta das palavras e costumes que herdamos dos povos indígenas. No Rio de Janeiro, nomeamos animais, brincamos, preparamos alimentos e nos expressamos através de saberes cujas raízes vêm diretamente da herança originária.
-
+    trabalho: `Na turma do pré 1 (E.I. 41), a caminhada começou a partir da escuta atenta das palavras e costumes que herdamos dos povos indígenas. No Rio de Janeiro, nomeamos animais, brincamos, preparamos alimentos e nos expressamos através de saberes cujas raízes vêm diretamente da herança originária.
 Ao longo do projeto, as crianças mergulharam em vivências práticas, artísticas e sensoriais que uniram letramento, cultura, culinária, ciência e movimento.
-
-• Inspirados na tradição indígena de extrair cores da natureza, investigamos e produzimos nossas próprias tintas artísticas usando colorau, cúrcuma, spirulina e farinha de beterraba. As crianças exploraram misturas, aromas, texturas e tonalidades vibrantes em suas criações plásticas.
-
-• Investigamos o significado de palavras como Jacaré ("aquele que olha de lado") e Taturana ("semelhante ao fogo"), construindo animais de sucata e estudando o ciclo de vida de cada animal.
-
-• Inspirados pelos costumes indígenas de navegação e pesca, as crianças produziram seus próprios peixinhos com a letra inicial do seu nome e participaram de uma pescaria lúdica na "canoa" da turma, fortalecendo a consciência fonológica de forma afetiva.
-
-• Descobrimos a Peteca (que em Tupi significa "golpear com as mãos"). As crianças exploraram essa brincadeira tradicional indígena, desenvolvendo a coordenação motora, o ritmo, o equilíbrio e a cooperação.
-
-• Apresentamos a Mandioca na sua forma natural, permitindo que as crianças explorassem sua textura e origem. A vivência culminou na culinária de um delicioso Bolo de Mandioca, produzido para ser partilhado com as famílias, celebrando o afeto e a ancestralidade à mesa.
+       Inspirados na tradição indígena de extrair cores da natureza, investigamos e produzimos nossas próprias tintas artísticas usando colorau, cúrcuma, spirulina e farinha de beterraba. As crianças exploraram misturas, aromas, texturas e tonalidades vibrantes em suas criações plásticas.
+Investigamos o significado de palavras como Jacaré ("aquele que olha de lado") e Taturana ("semelhante ao fogo"), construindo animais de sucata e estudando o ciclo de vida de cada animal.
+Inspirados pelos costumes indígenas de navegação e pesca, as crianças produziram seus próprios peixinhos com a letra inicial do seu nome e participaram de uma pescaria lúdica na "canoa" (que na língua Aruak significa “pequenas embarcações”) da turma, fortalecendo a consciência fonológica de forma afetiva.
+Descobrimos a Peteca (que em Tupi significa "golpear com as mãos"). As crianças exploraram essa brincadeira tradicional indígena, desenvolvendo a coordenação motora, o ritmo, o equilíbrio e a cooperação.
+Trabalhamos a lenda indígena da Mandioca e apresentamos a Mandioca (que na língua Tupi significa “Casa de Mani”) na sua forma natural, permitindo que as crianças explorassem sua textura e origem. A vivência culminou na culinária de um delicioso Bolo de Mandioca, produzido para ser partilhado com as famílias, celebrando o afeto e a ancestralidade à mesa.
 
 Mandioca no prato, peteca no ar, tinta natural no papel e palavras Tupi na ponta da língua: assim celebramos a nossa história no Pré 1.
-Agradecemos a cada família por caminhar conosco nessa jornada de discoveries e afeto!
+Agradecemos a cada família por caminhar conosco nessa jornada de descobertas e afeto!
 
 Respeitar as raízes do nosso país é o primeiro passo para construir um futuro com mais consciência.
 E aprender sobre as nossas raízes através do brincar, do sentir e do saborear é o caminho mais bonito para construir o afeto e o pertencimento.`
