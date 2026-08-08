@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 // DADOS DA CRECHE E PROJETO PRINCIPAL
@@ -173,6 +173,11 @@ export default function App() {
 
 // COMPONENTE DE DETALHE DA TURMA
 function TurmaDetail({ turma, onBack }) {
+  // Rola a página suavemente para o topo quando a turma for selecionada
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   return (
     <div className="turma-detail">
       <button className="back-btn" onClick={onBack}>
