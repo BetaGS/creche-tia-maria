@@ -320,7 +320,7 @@ export default function App() {
 
       {/* RODAPÉ NA TELA INICIAL */}
       <footer className="footer">
-        <p>&copy; 2025 feito por Gabriel "Beta" Siqueira!</p>
+        <p>&copy; 2026 feito por Gabriel "Beta" Siqueira!</p>
       </footer>
     </div>
   );
