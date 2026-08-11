@@ -59,10 +59,48 @@ Outra palavra que a turma também está explorando é SUCURI, devido ao sucesso 
     id: 'pre1',
     nome: 'PRÉ 1',
     subtitulo: 'EI-41',
-    fotoBotao: 'https://images.unsplash.com/photo-1574958269340-fa927503f3dd?w=300&h=200&fit=crop&crop=center&auto=format',
+    fotoBotao: 'IMG_20260714_074506.jpg',
     imagensGaleria: [
-      'https://via.placeholder.com/600x400?text=Foto+Tintas+Naturais',
-      'https://via.placeholder.com/600x400?text=Foto+Pescaria+e+Mandioca'
+      'IMG_20260513_095227.jpg',
+      'IMG_20260519_105911.jpg',
+      'IMG_20260519_104634.jpg',
+      'IMG_20260527_110228817_MFNR.jpg',
+      'IMG_20260527_110233688_MFNR.jpg',
+      'IMG_20260602_100702448_MFNR.jpg',
+      'IMG_20260602_100813634_MFNR.jpg',
+      'IMG_20260602_101116534_MFNR.jpg',
+      'IMG_20260602_104505028_MFNR.jpg',
+      'IMG_20260602_111150725_MFNR.jpg',
+      'IMG_20260609_094320.jpg',
+      'IMG_20260609_094530.jpg',
+      'IMG_20260610_105842.jpg',
+      'IMG_20260610_105845.jpg',
+      'IMG_20260610_105850.jpg',
+      'IMG_20260610_105911.jpg',
+      'IMG_20260610_105913.jpg',
+      'IMG_20260610_111256.jpg',
+      'IMG_20260610_111304.jpg',
+      'IMG_20260619_102714.jpg',
+      'IMG_20260619_103323.jpg',
+      'IMG_20260619_104827.jpg',
+      'IMG_20260619_140218.jpg',
+      'IMG_20260623_112221.jpg',
+      'IMG_20260623_112227.jpg',
+      'IMG_20260703_111419.jpg',
+      'IMG_20260703_111619.jpg',
+      'IMG_20260709_151330.jpg',
+      'IMG_20260709_151353.jpg',
+      'IMG_20260709_151413.jpg',
+      'IMG_20260713_093106.jpg',
+      'IMG_20260713_093759.jpg',
+      'IMG_20260713_095056.jpg',
+      'IMG_20260714_074500.jpg',
+      'IMG_20260714_074516.jpg',
+      'IMG_20260714_074526.jpg',
+      'IMG_20260714_080510.jpg',
+      'IMG_20260714_080936.jpg',
+      'IMG_20260714_082319.jpg',
+      'IMG_20260714_091224.jpg',
     ],
     trabalho: `Na turma do pré 1 (E.I. 41), a caminhada começou a partir da escuta atenta das palavras e costumes que herdamos dos povos indígenas. No Rio de Janeiro, nomeamos animais, brincamos, preparamos alimentos e nos expressamos através de saberes cujas raízes vêm diretamente da herança originária.
 Ao longo do projeto, as crianças mergulharam em vivências práticas, artísticas e sensoriais que uniram letramento, cultura, culinária, ciência e movimento.
@@ -80,7 +118,7 @@ E aprender sobre as nossas raízes através do brincar, do sentir e do saborear 
   }
 ];
 
-// COMPONENTE PARA DTECTAR E TRANSFORMAR LINKS EM CLICÁVEIS
+// COMPONENTE PARA DETECTAR E TRANSFORMAR LINKS EM CLICÁVEIS
 function TextoFormatadoComLinks({ texto }) {
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   const partes = texto.split(urlRegex);
@@ -104,6 +142,53 @@ function TextoFormatadoComLinks({ texto }) {
         return parte;
       })}
     </p>
+  );
+}
+
+// COMPONENTE DE CARROSSEL DE IMAGENS
+function Carrossel({ imagens }) {
+  const [indiceAtual, setIndiceAtual] = useState(0);
+
+  if (!imagens || imagens.length === 0) return null;
+
+  const proximoSlide = () => {
+    setIndiceAtual((prev) => (prev === imagens.length - 1 ? 0 : prev + 1));
+  };
+
+  const slideAnterior = () => {
+    setIndiceAtual((prev) => (prev === 0 ? imagens.length - 1 : prev - 1));
+  };
+
+  return (
+    <div className="carrossel-container">
+      <div className="carrossel-slide">
+        <img 
+          src={imagens[indiceAtual]} 
+          alt={`Foto ${indiceAtual + 1} de ${imagens.length}`} 
+        />
+      </div>
+
+      {imagens.length > 1 && (
+        <>
+          <button className="carrossel-btn btn-prev" onClick={slideAnterior}>
+            &#10094;
+          </button>
+          <button className="carrossel-btn btn-next" onClick={proximoSlide}>
+            &#10095;
+          </button>
+
+          <div className="carrossel-indicadores">
+            {imagens.map((_, idx) => (
+              <span
+                key={idx}
+                className={`indicador ${idx === indiceAtual ? 'ativo' : ''}`}
+                onClick={() => setIndiceAtual(idx)}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
   );
 }
 
@@ -167,7 +252,6 @@ export default function App() {
 
 // COMPONENTE DE DETALHE DA TURMA
 function TurmaDetail({ turma, onBack }) {
-  // Rola a página suavemente para o topo quando a turma for selecionada
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -180,15 +264,8 @@ function TurmaDetail({ turma, onBack }) {
 
       <h2>{turma.nome} ({turma.subtitulo})</h2>
 
-      {turma.imagensGaleria && turma.imagensGaleria.length > 0 && (
-        <div className="galeria-fotos">
-          {turma.imagensGaleria.map((imgUrl, index) => (
-            <div key={index} className="turma-detail-image">
-              <img src={imgUrl} alt={`Foto ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      )}
+      {/* Carrossel inserido aqui */}
+      <Carrossel imagens={turma.imagensGaleria} />
 
       <div className="trabalho-texto">
         <TextoFormatadoComLinks texto={turma.trabalho} />
