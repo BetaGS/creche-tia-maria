@@ -34,12 +34,28 @@ const TURMAS = [
       'c6e1a18d-1855-4d2a-89b2-34e16b1da101.JPG',
       'cadefcec-46b3-4a27-8a86-4bac2a1117df.JPG',
       'cdbf47f3-d3dc-4a82-a584-1fc664c5eb8d.JPG',
+      'WhatsApp Image 2026-08-11 at 18.23.11 (1).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.11.jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.12 (1).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.12 (2).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.12 (3).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.12.jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.13 (1).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.13 (2).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.13 (3).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.13 (4).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.13.jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.14 (1).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.14 (2).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.14 (3).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.14 (4).jpeg',
+      'WhatsApp Image 2026-08-11 at 18.23.14.jpeg',
     ],
     trabalho: `A nossa turma do berçário (EI-11) criou algumas possibilidades para que nossos bebês pudessem participar de maneira ativa, prazerosa e significativa desses momentos. Por ser uma turma que adora música, iniciaram essa jornada brincando com a música O jacaré foi passear lá na lagoa disponível em: https://www.youtube.com/watch?v=jqy_y7n5KREando as crianças a reproduzirem o nome, seus movimentos, chamando a atenção para as partes do corpo e brincando de passear na lagoa igual ao jacaré, e ao final construíram um jacaré coletivo. Nossos bebês amaram participar desse momento.
 
 Fortalecendo o movimento de pega utilizando pincéis do tipo batedor, estimulando as percepções visuais e táteis, e desenvolvendo a capacidade atenção ao ser conduzido para explorar novas propostas.
 
-Assim como a palavra jacaré, eles também aproveitaram para conhecer a música do O TATU do grupo formiga balão, disponível em https://youtu.be/jqy_y7n5KRE?si=-f9ORIw_C7Eq3cKSpelas professoras do grupamento quanto pelo o que é reproduzido no vídeo. Nossa turma brincou, dançou, envolveu-se de forma lúdica e ainda ampliou o seu vocabulário utilizando mais uma palavra que é de origem indígena da linha TUPI.
+Assim como a palavra jacaré, eles também aproveitaram para conhecer a música do O TATU do grupo formiga balão, disponível em https://youtu.be/jqy_y7n5KRE?si=-f9ORIw_C7Eq3cKSpelas professoras do grupamento quanto pelo o que é reproduzido no vídeo. Nossa turma brincou, dançou, envolveuse de forma lúdica e ainda ampliou o seu vocabulário utilizando mais uma palavra que é de origem indígena da linha TUPI.
 
 Manipulação de tintas utilizando as mãos, estimulando a percepção tátil e a coordenação motora fina.`
   },
@@ -71,7 +87,6 @@ Manipulação de tintas utilizando as mãos, estimulando a percepção tátil e 
       'eb82c92a-afdd-48a8-a8b5-a0af40baa14b.JPG',
       'f518d4f2-537b-43b4-b5d9-c864b3c143a8.JPG',
       'fa6638d3-3977-47c0-9c4e-b5f186f00a4e.JPG',
-      
     ],
     trabalho: `Já a nossa turma do maternal 1 (EI-21) está explorando uma das delícias mais saborosas que eles conhecem, a PIPOCA! Estão observando o milho em diferentes estágios e também puderam observar como essa transformação acontece, fazendo a pipoca e ouvindo o som junto com as professoras do grupamento e depois degustaram essa delicia. Além de expandir seu repertório de palavras dando um maior significado a essa palavra que está tão presente no cotidiano deles.`
   },
@@ -104,7 +119,6 @@ Manipulação de tintas utilizando as mãos, estimulando a percepção tátil e 
       'e4ade2a2-e36b-472d-a810-7f8390cba2f2.JPG',
       'f4b67b3e-df04-4bca-ad1c-4c6bab1fe95e.JPG',
       'f82df7d9-d4d9-437e-83af-58d08cd8f3d9.JPG',
-    
     ],
     trabalho: `Em nossa turma do maternal 2 (EI-31) nossos pequenos estão conhecendo algumas palavras que despertam muito a curiosidade, como a palavra SAGUI que vem do tronco TUPI. Em uma roda de conversa as professoras indagaram a turma sobre essa palavra e se alguém já havia escutado em algum momento, criando hipóteses sobre o que é e, de onde vem essa palavra com sonoridade tão diferente. Cada criança pôde verbalizar o que achava que era e ao longo da conversa descobriram que se tratava de uma espécie de primata que conseguimos observar muito por aqui onde estamos localizados. Foi um encanto para eles explorar e perceber que essa palavra está associada há algo com o qual eles já conheciam e observavam em seu território, porém, conseguimos estimular a origem da palavra e o quanto essa cultura TUPI nos envolve até os dias atuais.
 
@@ -303,6 +317,11 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      {/* RODAPÉ NA TELA INICIAL */}
+      <footer className="footer">
+        <p>&copy; 2025 feito por Gabriel "Beta" Siqueira!</p>
+      </footer>
     </div>
   );
 }
@@ -331,6 +350,11 @@ function TurmaDetail({ turma, onBack }) {
       <button className="back-btn" onClick={onBack}>
         &larr; Voltar para o projeto principal
       </button>
+
+      {/* RODAPÉ NA TELA DE DETALHES */}
+      <footer className="footer">
+        <p>&copy; 2025 feito por Gabriel "Beta" Siqueira!</p>
+      </footer>
     </div>
   );
 }
